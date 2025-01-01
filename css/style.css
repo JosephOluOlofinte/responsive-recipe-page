@@ -1,0 +1,165 @@
+@import url('./fonts.css');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --brown-800: hsl(14, 45%, 36%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --body-font: 'Outfit', sans-serif;
+    --title-font: 'Young Serif', serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--stone-100);
+    display: flex;
+    justify-content: center;
+    color: var(--stone-600);
+    font-family: var(--body-font);
+    padding-block: 80px;
+}
+
+p,
+li {
+    line-height: 1.6rem;
+}
+
+ol, ul {
+    list-style-position: outside;
+    margin-left: 10px;
+}
+
+li {
+    margin-left: 7px;
+    margin-bottom: 7px; 
+    padding-left: 15px;   
+}
+
+li::marker {
+    color: var(--rose-800);
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--title-font);
+    padding-bottom: 10px;
+    color: var(--rose-800);
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: grid;
+    row-gap: 30px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.title h1 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: var(--stone-900);
+    margin-bottom: 5px;
+}
+
+.prep-time {
+    background-color: var(--rose-50);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.prep-time p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--rose-800);
+    margin-bottom: 10px;
+}
+
+table {
+    margin-block: 15px;
+    border-collapse: collapse;
+}
+
+.nutrition, .value {
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.value {
+    color: var(--rose-800);
+    font-weight: 600;
+}
+.last-td {
+    border: 0;
+}
+
+ /* MOBILE SCREEN */
+ @media (max-width: 430px) {
+
+    body {
+        padding-top: 10px;
+        background-color: var(--white);
+    }
+
+    .banner {
+        width: 100% !important;
+    }
+
+    .container {
+        padding: 15px;
+    }
+    
+    html {
+        font-size: 0.9rem;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+    }
+
+    @media (max-width: 320px) {
+        .title h1 {
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+        }
+    }
