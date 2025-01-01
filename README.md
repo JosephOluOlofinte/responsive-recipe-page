@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JosephOluOlofinte/responsive-recipe-page)
-- Live Site URL: [Social Links Profile](https://josepholuolofinte.github.io/responsive-recipe-page/)
+- Live Site URL: [Responsive Recipe Page](https://josepholuolofinte.github.io/responsive-recipe-page/)
 
 ## My process
 
